@@ -9,7 +9,7 @@ import { motion } from "framer-motion"
 const Banner = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "flames.jpg" }) {
+      file(relativePath: { eq: "bg-9.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 2000, quality: 90) {
             ...GatsbyImageSharpFluid_withWebp
@@ -30,6 +30,7 @@ const Banner = () => {
         Tag="section"
         className="hero-image"
         fluid={data.file.childImageSharp.fluid}
+        id="myid"
       >
         <div className="hero-content">
           <motion.h1
@@ -38,7 +39,7 @@ const Banner = () => {
             variants={variants}
             transition={{ ease: "easeOut", duration: 0.8, delay: 1 }}
           >
-            It's time to make your business <span>stand out</span>
+            <span>Stock</span> Gérez votre boutique facilement
           </motion.h1>
           <motion.p
             initial="hidden"
@@ -46,11 +47,11 @@ const Banner = () => {
             variants={variants}
             transition={{ ease: "easeOut", duration: 0.8, delay: 1.5 }}
           >
-            Startup is here to help you achieve your business and personal
-            goals, all through a stylish theme
+            Stock facilite votre travail pour aider à
+            atteindre vos buts
           </motion.p>
-          <Link to="about" smooth={true} duration={500}>
-            <Button cta="Learn More" anchor={true} href="linking" />
+          <Link to="features" smooth={true} duration={500}>
+            <Button cta="Découvrez maintenant" anchor={true} href="linking" />
           </Link>
         </div>
       </BackgroundImage>
@@ -59,11 +60,13 @@ const Banner = () => {
 }
 
 const BannerWrapper = styled.section`
+  #myid::before {
+    opacity: 0.5;
+  }
   .gatsby-image-wrapper {
     height: 100vh;
     color: #fff;
     }
-
     .hero-content {
       text-align: center;
       height: 100%;
@@ -85,7 +88,8 @@ const BannerWrapper = styled.section`
         line-height: 1.2;
 
         span {
-          background: -webkit-linear-gradient(45deg, #f441a5, #03a9f4);
+          font-weight: 600;
+          background: #f441a5;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }
@@ -96,6 +100,12 @@ const BannerWrapper = styled.section`
         margin-bottom: 2rem;
         line-height: 1.2;
         font-size: 1.15rem;
+
+        span {
+          background: -webkit-linear-gradient(45deg, #f441a5, #03a9f4);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
 
         @media (min-width: 768px) {
           font-size: 1.35rem;
