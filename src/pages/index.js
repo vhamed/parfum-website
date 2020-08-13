@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Banner from "../components/Banner/banner"
 import TextBlock from "../components/TextBlock/textBlock"
-import TextBlockImg from "../components/TextBlockImg/textBlockImg"
+import InverseTextBlock from "../components/TextBlock/inverseTextBlock"
 import Perk from "../components/Perk/perk"
 import Button from "../components/Button/button"
 import Packages from "../components/Packages/packages"
@@ -10,9 +10,11 @@ import Package from "../components/Package/package"
 import Contact from "../components/Contact/contact"
 import { Link } from "react-scroll"
 
-import perk1Img from "../images/speed.svg"
-import perk2Img from "../images/piggy-bank.svg"
-import perk3Img from "../images/friendly-staff.svg"
+import perk1Img from "../images/database.svg"
+import perk2Img from "../images/profile1.svg"
+import perk3Img from "../images/support1.svg"
+import perk4Img from "../images/import.svg"
+import perk5Img from "../images/scanner.svg"
 
 import { IconContext } from "react-icons"
 import { MdDone, MdClear } from "react-icons/md"
@@ -21,18 +23,9 @@ export default () => (
   <>
     <Layout>
       <Banner />
-      <TextBlock
-        id="about"
-        title="Developing a new business is never easy, but Startup is here to help"
-        paragraph="With a super-fast Gatsby powered website you have the perfect platform to get your idea off the ground. Its the perfect template to help turn your idea into a reality."
-      >
-        <Link to="perks" smooth={true} duration={500}>
-          <Button cta="Tell Me More!" />
-        </Link>
-      </TextBlock>
-      <TextBlockImg
-        id="perks"
-        title="We have the tools to help you suceed"
+      <InverseTextBlock
+        id="features"
+        title="Stock Organise tous les services de votre Entreprise"
         subtitle="Startup is perfect for helping to to start and grow your business. As
           you begin to gain new clients and expand you will see the benefits of
           a super-fast Gatsby website"
@@ -40,27 +33,47 @@ export default () => (
         <div className="flex-container trio-block">
           <Perk
             img={perk1Img}
-            alt="Super fast speed increases"
-            title="Speedy"
-            content="Super-fast response times ensure your business is not affected"
+            alt="Base de données performante"
+            title="Base de données performante"
+            content="Peu importe le volume de vos données"
           />
           <Perk
             img={perk2Img}
-            alt="Great savings to be made"
-            title="Affordable"
+            alt="Interface Moderne"
+            title="Interface Moderne"
             content="A choice of packages to suit every business type and size"
           />
           <Perk
             img={perk3Img}
-            alt="Super fast speed increases"
-            title="Friendly"
-            content="Advisors who are available 24/7, all with exprt knowledge"
+            alt="Service après vente de qualité"
+            title="Service après vente de qualité"
+            content="Nous vous écoute pour aider à exploiter votre licence dans les meilleures conditions"
+          />
+          <Perk
+            img={perk4Img}
+            alt="Importation / Exportation"
+            title="Importation / exportation simples"
+            content="Nous vous écoute pour aider à exploiter votre licence dans les meilleures conditions"
+          />
+          <Perk
+            img={perk5Img}
+            alt="Vente au Comptoir et périphériques POS"
+            title="Vente au Comptoir et périphériques POS"
+            content="Nous vous écoute pour aider à exploiter votre licence dans les meilleures conditions"
           />
         </div>
-      </TextBlockImg>
+      </InverseTextBlock>
+      <TextBlock
+        title="Gérez votre activité commerciale en toute simplicité!"
+        paragraph="Stock vous garantit un passage vers une interface plus attractive et des fonctionnalités encore plus riches"
+      >
+        <Link to="packages" smooth={true} duration={500}>
+          <Button cta="Essayer Gratuitement!" />
+        </Link>
+      </TextBlock>
       <Packages
-        title="Our Packages"
-        para="Choose the perfect solution for you. With benefits to suit all budgets Startup can offer amazing value and expert advice"
+        title="Nos Packs"
+        para="Stock vous garantit un passage vers une interface plus attractive et des fonctionnalités encore plus riches"
       >
         <IconContext.Provider
           value={{
@@ -69,7 +82,7 @@ export default () => (
             style: { verticalAlign: "middle", marginRight: "5px" },
           }}
         >
-          <Package title="Standard">
+          <Package title="Gratuite">
             <ul>
               <li>
                 <MdDone />1 User
@@ -88,10 +101,10 @@ export default () => (
               </li>
             </ul>
             <Link to="contact" smooth={true} duration={500}>
-              <Button cta="I want this!" />
+              <Button cta="Télécharger" />
             </Link>
           </Package>
-          <Package title="Hyper" active={true}>
+          <Package title="Standard" active={true}>
             <ul>
               <li>
                 <MdDone />
@@ -111,10 +124,10 @@ export default () => (
               </li>
             </ul>
             <Link to="contact" smooth={true} duration={500}>
-              <Button cta="I want this!" />
+              <Button cta="Télécharger" />
             </Link>
           </Package>
-          <Package title="Super">
+          <Package title="Version Pro">
             <ul>
               <li>
                 <MdDone />
@@ -134,15 +147,15 @@ export default () => (
               </li>
             </ul>
             <Link to="contact" smooth={true} duration={500}>
-              <Button cta="I want this!" />
+              <Button cta="Télécharger" />
             </Link>
           </Package>
         </IconContext.Provider>
       </Packages>
       <Contact
         id="contact"
-        title="Contact Startup today and see how we can help your business grow"
-        subtitle="Every second counts when you're looking to get your new business started. Drop Startup a message and one of our representatives will be in contact"
+        title="Contactez Nous"
+        subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt"
       />
     </Layout>
   </>
