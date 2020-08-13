@@ -13,6 +13,7 @@ module.exports = {
     image: "/yellow-metal-design-decoration.jpg",
     siteUrl: "https://www.morganbaker.dev",
   },
+  pathPrefix: "/inventory-website",
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
