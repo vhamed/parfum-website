@@ -1,17 +1,27 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import links from "../../constants/links"
 import styled from "styled-components"
-import Logo from "../../images/startup-logo.svg"
+import Logo from "../../images/facebook.svg"
 import { Link, animateScroll as scroll } from "react-scroll"
 
 const Navbar = () => {
   const [isOpen, setNav] = useState(false)
+  const [onTop, setOnTop] = useState(true)
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 100) setOnTop(false)
+      else setOnTop(true)
+    })
+    return () => window.removeEventListener("scroll")
+  }, [])
 
   const toggleNav = () => {
     setNav(isOpen => !isOpen)
   }
+
   return (
-    <NavWrapper>
+    <NavWrapper onTop={onTop}>
       <div className="masthead flex-container">
         <img src={Logo} alt="Startup Logo" />
         <button
@@ -36,7 +46,7 @@ const Navbar = () => {
             <li key={index}>
               <Link
                 activeClass="active"
-                to={item.text}
+                to={item.to}
                 spy={true}
                 smooth={true}
                 duration={500}
@@ -60,6 +70,8 @@ const NavWrapper = styled.nav`
   left: 0;
   right: 0;
   display: flex;
+  background: ${props =>
+    props.onTop ? "transparent" : "linear-gradient(45deg,#060c21,#0d0139)"};
   padding: 1rem;
   box-sizing: border-box;
 
@@ -70,6 +82,7 @@ const NavWrapper = styled.nav`
 
     img {
       width: 90px;
+      max-height: 40px;
 
       @media (min-width: 768px) {
         width: 100px;
