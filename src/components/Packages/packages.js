@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const Packages = ({ title, para, children }) => {
   return (
-    <PackagesWrapper>
+    <PackagesWrapper id="packages">
       <div className="text-area">
         <h2>{title}</h2>
         <p>{para}</p>
@@ -16,6 +16,8 @@ const Packages = ({ title, para, children }) => {
 const PackagesWrapper = styled.section`
   padding: 100px 30px;
   text-align: center;
+  background: #fff;
+  color: #000;
 
   .text-area {
     max-width: 500px;
