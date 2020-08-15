@@ -103,11 +103,8 @@ const Footer = ({ siteTitle, siteDescription }) => (
 
       <div className={"copyright"}>
         <p>
-          Copyright {new Date().getFullYear()}, {` `}{" "}
-          <a href="https://histaff.io" title={siteTitle}>
-            {siteTitle}
-          </a>
-          . All rights reserved.
+          Copyright {new Date().getFullYear()}, {siteTitle}. All rights
+          reserved.
         </p>
       </div>
     </div>
