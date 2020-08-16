@@ -3,15 +3,12 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import featureImage from "../../static/images/inventory1.png";
-import thumbnailEvent from "../../static/images/inventory1.png";
+import logo from "../../static/images/integration/slack-histaff.svg";
 import thumbnailBoard from "../../static/images/feature-board.png";
-import thumbnailNews from "../../static/images/feature-news.png";
-import thumbnailTeams from "../../static/images/feature-team.png";
-import thumbnailStaff from "../../static/images/feature-user.png";
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Make your Staff and Workspace Happy" />
+    <SEO title="Home" />
 
     <div className={"page-header home"}>
       <h1>Gérez votre boutique facilement</h1>
@@ -19,125 +16,40 @@ const IndexPage = () => (
       <img alt={"Dashboard"} src={featureImage} />
     </div>
 
+    <div className={"container-fluid"}>
+      <div className={"trust"}>
+        <div className={"row"}>
+          <div className={"col-4"}>
+            <img src={logo} />
+          </div>
+          <div className={"col-4"}>
+            <img src={logo} />
+          </div>
+          <div className={"col-4"}>
+            <img src={logo} />
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div className={"container"}>
       <div className={"features"}>
-        <div className={"feature__item"}>
-          <div className={"row"}>
-            <div className={"col-6 first"}>
-              <div className={"thumbnail"}>
-                <img alt={"Event"} src={thumbnailEvent} />
-              </div>
-            </div>
-
-            <div className={"col-6"}>
-              <div className={"feature__content"}>
-                <h2>Base de données performante</h2>
-                <p>
-                  Nous vous écoute pour aider à exploiter votre licence dans les
-                  meilleures conditions
-                </p>
-              </div>
-            </div>
+        <h1>Features</h1>
+        <div className={"row"}>
+          <div className={"col-4"}>
+            <img src={thumbnailBoard} />
+            <h3>Feature 1</h3>
+            <p>Feature 1</p>
           </div>
-        </div>
-
-        <div className={"feature__item"}>
-          <div className={"row"}>
-            <div className={"col-6"}>
-              <div className={"feature__content"}>
-                <h2>Interface Moderne Avec Mode Nuit</h2>
-                <p>
-                  Nous vous écoute pour aider à exploiter votre licence dans les
-                  meilleures conditions
-                </p>
-              </div>
-            </div>
-
-            <div className={"col-6 first"}>
-              <div className={"thumbnail"}>
-                <img alt={"Board"} src={thumbnailBoard} />
-              </div>
-            </div>
+          <div className={"col-4"}>
+            <img src={thumbnailBoard} />
+            <h3>Feature 1</h3>
+            <p>Feature 1</p>
           </div>
-        </div>
-
-        <div className={"feature__item"}>
-          <div className={"row"}>
-            <div className={"col-6 first"}>
-              <div className={"thumbnail"}>
-                <img alt={"News"} src={thumbnailNews} />
-              </div>
-            </div>
-
-            <div className={"col-6"}>
-              <div className={"feature__content"}>
-                <h2>Importer - Exporter Vos Données Facilement</h2>
-                <p>
-                  Nous vous écoute pour aider à exploiter votre licence dans les
-                  meilleures conditions
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className={"feature__item"}>
-          <div className={"row"}>
-            <div className={"col-6"}>
-              <div className={"feature__content"}>
-                <h2>Fidélité Avec 1000 Carte Gratuite</h2>
-                <p>
-                  Nous vous écoute pour aider à exploiter votre licence dans les
-                  meilleures conditions
-                </p>
-              </div>
-            </div>
-
-            <div className={"col-6 first"}>
-              <div className={"thumbnail"}>
-                <img alt={"Board"} src={thumbnailBoard} />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className={"feature__item"}>
-          <div className={"row"}>
-            <div className={"col-6 first"}>
-              <div className={"thumbnail"}>
-                <img alt={"Users"} src={thumbnailStaff} />
-              </div>
-            </div>
-
-            <div className={"col-6"}>
-              <div className={"feature__content"}>
-                <h2>Service après vente de qualité</h2>
-                <p>
-                  Nous vous écoute pour aider à exploiter votre licence dans les
-                  meilleures conditions
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className={"feature__item"}>
-          <div className={"row"}>
-            <div className={"col-6"}>
-              <div className={"feature__content"}>
-                <h2>Vente au Comptoir et périphériques POS</h2>
-                <p>
-                  Nous vous écoute pour aider à exploiter votre licence dans les
-                  meilleures conditions
-                </p>
-              </div>
-            </div>
-
-            <div className={"col-6 first"}>
-              <div className={"thumbnail"}>
-                <img alt={"Team"} src={thumbnailTeams} />
-              </div>
-            </div>
+          <div className={"col-4"}>
+            <img src={thumbnailBoard} />
+            <h3>Feature 1</h3>
+            <p>Feature 1</p>
           </div>
         </div>
       </div>
