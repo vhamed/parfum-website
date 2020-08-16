@@ -14,15 +14,17 @@ const Header = ({ siteTitle }) => {
           <Link to="/" title={siteTitle} className="logo">
             <img alt={"Logo"} src={logo} />
           </Link>
-          <Link to="/docs" href="#">
-            Documentation
-          </Link>
-          <Link to="/contact" href="#">
-            Contact
-          </Link>
-          <Link to="/about" href="#">
-            About
-          </Link>
+          <div className="nav-items">
+            <Link to="/docs" href="#">
+              Documentation
+            </Link>
+            <Link to="/about" href="#">
+              About
+            </Link>
+            <Link to="/contact" href="#">
+              Contact
+            </Link>
+          </div>
           <a className="icon" onClick={() => setResponsive(!responsive)}>
             <img alt="Toggle" src={menu} width="40px" />
           </a>

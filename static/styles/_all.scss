@@ -49,6 +49,7 @@ body {
       overflow: hidden;
       background-color: $primary-inverse;
       display: flex;
+      justify-content: space-between;
       flex-wrap: wrap;
       align-items: center;
       position: relative;
@@ -91,6 +92,11 @@ body {
         display: none;
       }
       .topnav {
+        .nav-items {
+          display: none;
+        }
+      }
+      .topnav {
         a.icon {
           position: absolute;
           right: 0;
@@ -103,6 +109,9 @@ body {
     @media screen and (max-width: $break-small) {
       .topnav.responsive {
         position: relative;
+        .nav-items {
+          display: block;
+        }
         a {
           float: none;
           display: block;
