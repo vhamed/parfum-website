@@ -2,7 +2,7 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import featureImage from "../../static/images/inventory1.png";
+import featureImage from "../../static/images/header.png";
 import trustLogo from "../../static/images/zara.svg";
 import thumbnailBoard from "../../static/images/feature-board.png";
 
@@ -12,7 +12,14 @@ const IndexPage = () => (
 
     <div className={"page-header home"}>
       <h1>Gérez votre boutique facilement</h1>
-      <p> Stock facilite votre travail pour aider à atteindre vos buts </p>
+      <span className="buttons">
+        <div className="button">
+          <a href="#" className="secondary">Version d'Essai</a>
+        </div>
+        <div className="button">
+          <a href="#">Télécharger</a>
+        </div>
+      </span>
       <img alt={"Dashboard"} src={featureImage} />
     </div>
 

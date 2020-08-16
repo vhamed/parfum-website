@@ -43,7 +43,8 @@ body {
   header {
     background-color: $bg-default;
     display: block;
-    padding: 39px 0;
+    padding: 0.5rem 0;
+    box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.1);
 
     .topnav {
       overflow: hidden;
@@ -57,7 +58,7 @@ body {
       .logo {
         img {
           max-width: 150px;
-          width: 100%;
+          width: 100px;
         }
       }
 
@@ -130,7 +131,8 @@ body {
 
   .page-header {
     text-align: center;
-    padding: 100px 0 100px 0;
+    margin-bottom: 30px;
+    padding: 0 0 100px;
     background-color: $bg-default;
     border-radius: 0px 0px 40px 40px;
 
@@ -157,10 +159,48 @@ body {
       font-size: 20px;
       line-height: 34px;
     }
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+
+      .button {
+        margin: 1rem;
+      }
+
+      a {
+        font-size: 18px;
+        color: $primary-inverse;
+        background-color: $primary;
+        width: 184px;
+        border-radius: 4px;
+        height: 54px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-weight: bold;
+        flex-direction: column;
+
+        @media screen and (max-width: $break-small) {
+          margin: 0 auto;
+        }
+
+        &:hover {
+          background-color: $primary-light;
+        }
+      }
+
+      a.secondary {
+        background-color: $primary-inverse;
+        color: $primary;
+        border: 1px solid $primary;
+      }
+    }
 
     img {
       margin-top: 61px;
-      max-width: 65%;
+      max-width: 90%;
     }
 
     &.home {
