@@ -9,17 +9,17 @@ import instagramIcon from "../../static/images/instagram-icon.svg";
 
 const socialLinks = [
   {
-    link: "https://facebook.com/vhamed",
+    url: "https://facebook.com/ignisdzcreativity",
     icon: facebookIcon,
     title: "Facebook"
   },
   {
-    link: "https://instagram.com/vhamed",
+    url: "https://www.instagram.com/degitalservice_agency",
     icon: instagramIcon,
     title: "Instagram"
   },
   {
-    link: "https://medium.com/vhamed",
+    url: "https://behance.net/ignisdz",
     icon: beIcon,
     title: "Be"
   }
