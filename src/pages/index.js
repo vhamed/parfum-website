@@ -3,7 +3,7 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import featureImage from "../../static/images/inventory1.png";
-import logo from "../../static/images/integration/slack-histaff.svg";
+import trustLogo from "../../static/images/zara.svg";
 import thumbnailBoard from "../../static/images/feature-board.png";
 
 const IndexPage = () => (
@@ -19,14 +19,17 @@ const IndexPage = () => (
     <div className={"container-fluid"}>
       <div className={"trust"}>
         <div className={"row"}>
-          <div className={"col-4"}>
-            <img src={logo} />
+          <div className={"col-3"}>
+            <img src={trustLogo} />
           </div>
-          <div className={"col-4"}>
-            <img src={logo} />
+          <div className={"col-3"}>
+            <img src={trustLogo} />
           </div>
-          <div className={"col-4"}>
-            <img src={logo} />
+          <div className={"col-3"}>
+            <img src={trustLogo} />
+          </div>
+          <div className={"col-3"}>
+            <img src={trustLogo} />
           </div>
         </div>
       </div>

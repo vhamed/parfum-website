@@ -175,12 +175,11 @@ body {
 
   .trust {
     text-align: center;
-    padding: 2rem 0;
+    padding: 5px 0;
     background-color: $primary;
 
     img {
-      width: 151px;
-      height: 151px;
+      height: 80px;
     }
   }
 
@@ -439,11 +438,9 @@ body {
       }
 
       .social {
-        text-align: right;
-
-        @media screen and (max-width: $break-small) {
-          text-align: center;
-        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         a {
           margin-left: 20px;
@@ -456,10 +453,6 @@ body {
 
           &:hover img {
             filter: contrast(1);
-          }
-
-          &:first-child {
-            margin-left: 0;
           }
         }
       }
