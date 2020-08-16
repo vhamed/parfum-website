@@ -83,7 +83,7 @@ const Docs = () => (
       </div>
     </div>
 
-    <div className={"bg-color"}>
+    <div>
       <div className={"container"}>
         <div className={"integration-guid"}>
           <div className={"title"}>

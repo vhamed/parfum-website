@@ -12,9 +12,9 @@ const AboutPage = () => (
     <SEO title="About" />
 
     <div className={"page-header"}>
-      <h2>Stock Agency</h2>
+      <h2>Evo Agency</h2>
       <p>
-        Stock is a service that boost the staff’s productivity by offering new
+        Evo is a service that boost the staff’s productivity by offering new
         ways
         <br />
         to increase employee motivation and happiness.

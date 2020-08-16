@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Stock`,
+    title: `Evo`,
     short: `facilite votre travail`,
     description: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.`,
     author: `@vhamed`,
@@ -26,7 +26,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#FF54AC`,
         display: `minimal-ui`,
-        icon: `${__dirname}/static/images/histaff.png` // This path is relative to the root of the site.
+        icon: `${__dirname}/static/images/icon.svg` // This path is relative to the root of the site.
       }
     },
     `gatsby-plugin-sass`,
