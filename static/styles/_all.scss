@@ -11,14 +11,11 @@ $primary-light: #1781e2;
 
 $bg-default: #ffffff;
 $bg-paper: #f1f1f1;
+$font-name: Helvetica;
 
 body {
-  font-family: Helvetica;
+  font-family: $font-name;
   color: #797283;
-
-  p {
-    font-family: Helvetica;
-  }
 
   h1,
   h2,
@@ -26,7 +23,6 @@ body {
   h4,
   h5,
   h6 {
-    font-family: Helvetica;
     line-height: 43px;
     color: #1e1c21;
   }
@@ -165,14 +161,21 @@ body {
       align-items: center;
 
       .button {
-        margin: 1rem;
+        width: 184px;
+        margin: 0 0.5rem;
+
+        @media screen and (max-width: $break-small) {
+          margin: 0.25rem 0;
+          width: 80%;
+          max-width: 400px;
+        }
       }
 
       a {
         font-size: 18px;
         color: $primary-inverse;
         background-color: $primary;
-        width: 184px;
+        width: 100%;
         border-radius: 4px;
         height: 54px;
         display: flex;
@@ -180,10 +183,6 @@ body {
         justify-content: center;
         font-weight: bold;
         flex-direction: column;
-
-        @media screen and (max-width: $break-small) {
-          margin: 0 auto;
-        }
 
         &:hover {
           background-color: $primary-light;
@@ -330,7 +329,6 @@ body {
     .call-to-action__content {
       h2 {
         font-size: 36px;
-        font-family: Helvetica;
         font-weight: 600;
         margin: 0 0 32px;
         color: $primary;
@@ -386,15 +384,6 @@ body {
     width: 80%;
     margin: 0 auto;
     color: #1e1c21;
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: Helvetica;
-    }
 
     .title {
       text-align: center;
@@ -458,7 +447,6 @@ body {
           font-size: 14px;
           font-weight: bold;
           text-transform: uppercase;
-          font-family: Helvetica;
           line-height: 0;
           color: $footer-fg;
         }
