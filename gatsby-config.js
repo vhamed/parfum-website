@@ -1,10 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Evo`,
-    short: `facilite votre travail`,
+    title: `EVO`,
+    short: `evo`,
     description: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.`,
     author: `@vhamed`,
-    siteUrl: `https://vhamed.github.io/inventory-demo`
+    siteUrl: `https://vhamed.github.io/evo`,
+    pathPrefix: "/evo"
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -20,9 +21,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
+        name: `evo`,
+        short_name: `evo`,
+        start_url: `/evo`,
         background_color: `#663399`,
         theme_color: `#FF54AC`,
         display: `minimal-ui`,
