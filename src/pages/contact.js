@@ -6,28 +6,21 @@ import SEO from "../components/seo";
 const ContactPage = () => (
   <Layout>
     <SEO title="Contact" />
-    <div className={"container"}>
-      <div className={"content"}>
-        <div className={"title"}>
-          <h1>Contact</h1>
+    <div className={"container contact"}>
+      <div className={"row"}>
+        <div className={"col-7"}>
+          <h2>Contact</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet.
+          </p>
         </div>
-
-        <div className={"row"}>
-          <div className={"col-7"}>
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet.
-            </p>
-          </div>
-
-          <div className={"col-5"}>
-            <div className={"contact-items"}>
-              <h3>ignis-msz@gmail.com</h3>
-            </div>
-          </div>
+        <div className={"col-5"}>
+          <h2>Email</h2>
+          <h4>ignis-msz@gmail.com</h4>
         </div>
       </div>
     </div>

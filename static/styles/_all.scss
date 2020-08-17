@@ -410,6 +410,17 @@ body {
     }
   }
 
+  .contact {
+    h2 {
+      color: $text-primary;
+    }
+    h4 {
+      color: $primary;
+    }
+    .col-7 {
+      line-height: 26px;
+    }
+  }
   .footer_logo {
     width: 80%;
     margin: auto;
