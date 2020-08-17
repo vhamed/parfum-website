@@ -59,13 +59,13 @@ const Footer = ({ siteTitle, siteDescription }) => (
                   </Link>
                 </li>
                 <li>
-                  <a
-                    className={"links__special"}
-                    href="/docs"
+                  <Link
+                    to="/docs"
                     title="Documentation"
+                    className={"links__special"}
                   >
                     Documentation
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </ul>
