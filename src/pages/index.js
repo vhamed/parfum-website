@@ -13,11 +13,19 @@ const IndexPage = () => (
     <SEO title="Home" />
 
     <div className={"page-header home"}>
-      <h1>Gérez votre boutique facilement</h1>
+      <h1>Gérez votre parfumerie facilement</h1>
+      <div className="subheader">
+        N'attendez pas pour test notre application <span>gratuitement</span>{" "}
+        online
+      </div>
       <span className="buttons">
         <div className="button">
-          <a href="#" className="secondary">
-            Version d'Essai
+          <a
+            href="https://agitated-almeida-3c7a92.netlify.app/#/"
+            target="__blank"
+            className="secondary"
+          >
+            Essayez en Ligne
           </a>
         </div>
         <div className="button">
@@ -62,7 +70,7 @@ const IndexPage = () => (
             </p>
           </div>
           <div className={"col-4"}>
-            <img src={feature2} />
+            <img src={feature3} />
             <h3>systéme de fidélité</h3>
             <p>
               notre système de fidélité vous fera gagner du temps et de
@@ -73,7 +81,7 @@ const IndexPage = () => (
             </p>
           </div>
           <div className={"col-4"}>
-            <img src={feature3} />
+            <img src={feature2} />
             <h3>support</h3>
             <p>
               Notre équipe sera disponible 24h / 24 et 7j / 7 pour vous aider à
