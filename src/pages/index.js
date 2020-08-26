@@ -3,17 +3,24 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import featureImage from "../../static/images/header.png";
-import trustLogo from "../../static/images/zara.svg";
+import trustLogo1 from "../../static/images/zara.svg";
+import trustLogo2 from "../../static/images/zaki.svg";
+import trustLogo3 from "../../static/images/expert.svg";
+import trustLogo4 from "../../static/images/attia.svg";
+import trustLogo5 from "../../static/images/sook.svg";
+import trustLogo6 from "../../static/images/infopharm.svg";
 import feature1 from "../../static/images/fonction1.svg";
 import feature2 from "../../static/images/fonction2.svg";
 import feature3 from "../../static/images/fonction3.svg";
+import feature4 from "../../static/images/fonction4.svg";
+import feature5 from "../../static/images/fonction5.svg";
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
 
     <div className={"page-header home"}>
-      <h1>Gérez votre parfumerie facilement</h1>
+      <h1>Gérez votre Parfumerie facilement</h1>
       <div className="subheader">
         N'attendez pas pour test notre application <span>gratuitement</span>{" "}
         online
@@ -39,17 +46,23 @@ const IndexPage = () => (
       <div className={"trust"}>
         <h3>Nos Clients</h3>
         <div className={"row"}>
-          <div className={"col-3"}>
-            <img src={trustLogo} />
+          <div className={"col-2"}>
+            <img src={trustLogo1} />
           </div>
-          <div className={"col-3"}>
-            <img src={trustLogo} />
+          <div className={"col-2"}>
+            <img src={trustLogo2} />
           </div>
-          <div className={"col-3"}>
-            <img src={trustLogo} />
+          <div className={"col-2"}>
+            <img src={trustLogo3} />
           </div>
-          <div className={"col-3"}>
-            <img src={trustLogo} />
+          <div className={"col-2"}>
+            <img src={trustLogo4} />
+          </div>
+          <div className={"col-2"}>
+            <img src={trustLogo5} />
+          </div>
+          <div className={"col-2"}>
+            <img src={trustLogo6} />
           </div>
         </div>
       </div>
@@ -89,6 +102,30 @@ const IndexPage = () => (
               rencontrer.
             </p>
           </div>
+        </div>
+        <div className={"row"}>
+          <div className={"col-2"}></div>
+          <div className={"col-4"}>
+            <img src={feature4} />
+            <h3>Simple et Facile</h3>
+            <p>
+              Vous en avez assez des programmes extrêmement complexes qui ne
+              correspondent pas à votre façon de travailler?! Nous avons la
+              solution !! Notre logiciel a été programmé et adapté au
+              fonctionnement de nombreux magasins
+            </p>
+          </div>
+          <div className={"col-4"}>
+            <img src={feature5} />
+            <h3>Simple et Facile</h3>
+            <p>
+              Vous en avez assez des programmes extrêmement complexes qui ne
+              correspondent pas à votre façon de travailler?! Nous avons la
+              solution !! Notre logiciel a été programmé et adapté au
+              fonctionnement de nombreux magasins
+            </p>
+          </div>
+          <div className={"col-2"}></div>
         </div>
       </div>
     </div>
