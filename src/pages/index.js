@@ -133,15 +133,18 @@ const IndexPage = () => (
     <div className={"call-to-action"}>
       <div className={"container"}>
         <div className={"call-to-action__content"}>
-          <h2>Essayer Gratuitement</h2>
+          <h2>Logiciel de Vente Parfumerie</h2>
           <p>
-            Nous vous garantit un passage vers une interface plus attractive et
-            des fonctionnalités encore plus riches
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat.
           </p>
-        </div>
-
-        <div className="button">
-          <a href="#">Télécharger</a>
+          <h3>
+            Prix: <span>20,000 DA</span>
+          </h3>
+          <div className="button">
+            <a href="#">Télécharger</a>
+          </div>
         </div>
       </div>
     </div>
