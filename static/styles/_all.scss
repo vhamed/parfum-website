@@ -237,13 +237,14 @@ body {
   .trust {
     text-align: center;
     margin: 3em auto 0;
-    padding: 5px 0;
+    padding: 0;
     background-color: $primary;
 
     h3 {
       font-size: 29px;
-      margin: 0 auto 2em;
-      color: $primary-inverse;
+      padding: 0 0 1em;
+      background-color: $primary-inverse;
+      color: $primary;
     }
 
     img {
