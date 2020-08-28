@@ -14,7 +14,7 @@ $bg-paper: #f1f1f1;
 $font-name: Helvetica;
 
 $card-bg: #ffffff;
-$card-fg: purple;
+$card-fg: #753a88;
 
 body {
   font-family: $font-name;
@@ -291,7 +291,7 @@ body {
       font-style: normal;
       font-weight: bold;
       font-size: 34px;
-      color: $primary;
+      color: $card-fg;
       text-transform: uppercase;
       padding: 0 0 15px 0;
       line-height: 54px;
@@ -306,7 +306,7 @@ body {
       display: flex;
       flex-wrap: wrap;
       align-items: stretch;
-      justify-content: space-between;
+      justify-content: center;
 
       .card {
         box-shadow: 0px 1px 5px dimgray;
@@ -316,14 +316,15 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin: 1em 0;
+        margin: 1em;
 
         @media screen and (max-width: $break-small) {
           width: 100%;
+          margin: 1em 0;
         }
 
         h2 {
-          color: $primary;
+          color: $card-fg;
           font-size: 1.5em;
           font-weight: 600;
           margin: 0;
@@ -332,8 +333,8 @@ body {
         }
 
         & > .card-content {
-          // background: linear-gradient(45deg, #cc2b5e, #753a88);
-          background: linear-gradient(45deg, #36d1dc, #5b86e5);
+          background: linear-gradient(45deg, #cc2b5e, #753a88);
+          // background: linear-gradient(45deg, #36d1dc, #5b86e5);
           border-bottom-left-radius: 15px;
           border-bottom-right-radius: 15px;
         }
@@ -347,10 +348,12 @@ body {
 
         ul {
           margin: 0;
-          padding: 1em;
-          font-size: 0.9em;
+          padding: 0.5em;
+          font-size: 1.2em;
+          font-weight: 600;
           color: $primary-inverse;
         }
+
         li {
           margin-top: 0.5em;
         }
@@ -370,7 +373,7 @@ body {
         a {
           font-size: 18px;
           background-color: $primary-inverse;
-          color: $primary;
+          color: $card-fg;
           width: 100%;
           border-radius: 15px;
           height: 45px;
@@ -379,13 +382,12 @@ body {
           justify-content: center;
           font-weight: bold;
           flex-direction: column;
-
           @media screen and (max-width: $break-small) {
             margin: 0 auto;
           }
 
           &:hover {
-            background-color: $primary;
+            background-color: $card-fg;
             color: $primary-inverse;
           }
         }

@@ -159,7 +159,7 @@ const IndexPage = () => (
             <h2>Gestionnaire de Stock</h2>
           </div>
           <div className="card-content">
-            <h3>20,000 DA</h3>
+            <h3>Bientôt ...</h3>
             <ul>
               <li>option </li>
               <li>option </li>
@@ -168,7 +168,15 @@ const IndexPage = () => (
               <li>option </li>
             </ul>
             <div className="button">
-              <a href="#">Contactez Commercial</a>
+              <a
+                href="#"
+                style={{
+                  color: "gray",
+                  pointerEvents: "none"
+                }}
+              >
+                Contactez Commercial
+              </a>
             </div>
           </div>
         </div>
