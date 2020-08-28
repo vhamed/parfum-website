@@ -26,7 +26,7 @@ const socialLinks = [
 ];
 
 const Footer = ({ siteTitle, siteDescription }) => (
-  <footer>
+  <footer id="footer">
     <div className={"container"}>
       <div className={"row"}>
         <div className={"col-6"}>

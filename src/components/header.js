@@ -15,13 +15,13 @@ const Header = ({ siteTitle }) => {
             <img alt={"Logo"} src={logo} />
           </Link>
           <div className="nav-items">
-            <Link to="/docs" href="#">
-              Documentation
+            <Link to="#features" href="#">
+              Fonctionalités
             </Link>
-            <Link to="/about" href="#">
-              About
+            <Link to="#price" href="#">
+              Prix
             </Link>
-            <Link to="/contact" href="#">
+            <Link to="#footer" href="#">
               Contact
             </Link>
           </div>

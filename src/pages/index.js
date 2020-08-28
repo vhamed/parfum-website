@@ -68,7 +68,7 @@ const IndexPage = () => (
       </div>
     </div>
 
-    <div className={"container"}>
+    <div className={"container"} id="features">
       <div className={"features"}>
         <h2>Fonctionnalités</h2>
         <div className={"row"}>
@@ -95,11 +95,13 @@ const IndexPage = () => (
           </div>
           <div className={"col-4"}>
             <img src={feature2} />
-            <h3>support</h3>
+            <h3>support et MAJ</h3>
             <p>
               Notre équipe sera disponible 24h / 24 et 7j / 7 pour vous aider à
               gérer le logiciel ou à résoudre tout problème que vous pourriez
-              rencontrer.
+              rencontrer. Aussi des mises à jour seront apportées constamment,
+              pour améliorer votre expérience sans perdre vous marques et tout
+              cela GRATUITEMENT.
             </p>
           </div>
         </div>
@@ -107,22 +109,23 @@ const IndexPage = () => (
           <div className={"col-2"}></div>
           <div className={"col-4"}>
             <img src={feature4} />
-            <h3>Simple et Facile</h3>
+            <h3>Sauveguarde</h3>
             <p>
-              Vous en avez assez des programmes extrêmement complexes qui ne
-              correspondent pas à votre façon de travailler?! Nous avons la
-              solution !! Notre logiciel a été programmé et adapté au
-              fonctionnement de nombreux magasins
+              La fonctionnalité du backup un outil indispensable qui vous permet
+              de garder une copie de vos informations concernant vos clients,
+              prix de produits et noms de produits..ect et les récupérer en cas
+              de sinistre ou perte de système en toute simplicité
             </p>
           </div>
           <div className={"col-4"}>
             <img src={feature5} />
-            <h3>Simple et Facile</h3>
+            <h3>Code Barre</h3>
             <p>
-              Vous en avez assez des programmes extrêmement complexes qui ne
-              correspondent pas à votre façon de travailler?! Nous avons la
-              solution !! Notre logiciel a été programmé et adapté au
-              fonctionnement de nombreux magasins
+              La fonctionnalité du code barre, Permet de gagner du temps lors de
+              la saisie des quantités de produit, la gestion des clients, aussi
+              plus besoin de mémoriser tous les prix et les noms de produits car
+              en un seule BIP Vous pouvez consulter ou modifier les
+              informations.
             </p>
           </div>
           <div className={"col-2"}></div>
@@ -130,20 +133,43 @@ const IndexPage = () => (
       </div>
     </div>
 
-    <div className={"call-to-action"}>
+    <div className={"call-to-action"} id="price">
+      <h1 className="header">Nos Packs</h1>
       <div className={"container"}>
-        <div className={"call-to-action__content"}>
-          <h2>Logiciel de Vente Parfumerie</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat.
-          </p>
-          <h3>
-            Prix: <span>20,000 DA</span>
-          </h3>
-          <div className="button">
-            <a href="#">Télécharger</a>
+        <div className="card">
+          <div>
+            <h2>Logiciel Parfumerie</h2>
+          </div>
+          <div className="card-content">
+            <h3>20,000 DA</h3>
+            <ul>
+              <li>option </li>
+              <li>option </li>
+              <li>option </li>
+              <li>option </li>
+              <li>option </li>
+            </ul>
+            <div className="button">
+              <a href="#">Contactez Commercial</a>
+            </div>
+          </div>
+        </div>
+        <div className="card">
+          <div>
+            <h2>Gestionnaire de Stock</h2>
+          </div>
+          <div className="card-content">
+            <h3>20,000 DA</h3>
+            <ul>
+              <li>option </li>
+              <li>option </li>
+              <li>option </li>
+              <li>option </li>
+              <li>option </li>
+            </ul>
+            <div className="button">
+              <a href="#">Contactez Commercial</a>
+            </div>
           </div>
         </div>
       </div>
