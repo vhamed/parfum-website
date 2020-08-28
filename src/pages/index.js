@@ -139,9 +139,9 @@ const IndexPage = () => (
         <div className="card">
           <div>
             <h2>Logiciel Parfumerie</h2>
+            <h3>20,000 DA</h3>
           </div>
           <div className="card-content">
-            <h3>20,000 DA</h3>
             <ul>
               <li>option </li>
               <li>option </li>
@@ -157,9 +157,9 @@ const IndexPage = () => (
         <div className="card">
           <div>
             <h2>Gestionnaire de Stock</h2>
+            <h3>Bientôt ...</h3>
           </div>
           <div className="card-content">
-            <h3>Bientôt ...</h3>
             <ul>
               <li>option </li>
               <li>option </li>

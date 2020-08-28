@@ -16,8 +16,6 @@ $font-name: Helvetica;
 $card-bg: #ffffff;
 $card-fg: #1781e2;
 
-
-
 body {
   font-family: $font-name;
   color: #797283;
@@ -238,12 +236,13 @@ body {
 
   .trust {
     text-align: center;
+    margin: 3em auto 0;
     padding: 5px 0;
     background-color: $primary;
 
     h3 {
       font-size: 29px;
-      margin: 0;
+      margin: 0 auto 2em;
       color: $primary-inverse;
     }
 
@@ -284,7 +283,7 @@ body {
   }
 
   .call-to-action {
-    padding: 65px 0;
+    // padding: 65px 0;
     margin: 2rem;
     border-radius: 15px;
     text-align: center;
@@ -327,11 +326,19 @@ body {
 
         h2 {
           color: $card-fg;
-          font-size: 1.3em;
+          font-size: 1.5em;
           font-weight: 600;
           margin: 0;
-          padding: 2em 0.5em;
+          padding: 2em 0 0;
           text-transform: uppercase;
+        }
+
+        h3 {
+          font-size: 1.4em;
+          margin: 0;
+          color: darkorange;
+          font-weight: 500;
+          padding: 0 0 1em;
         }
 
         & > .card-content {
@@ -341,16 +348,9 @@ body {
           border-bottom-right-radius: 15px;
         }
 
-        h3 {
-          font-size: 1.4em;
-          margin: 0;
-          color: $primary-inverse;
-          padding: 1em 0 0;
-        }
-
         ul {
           margin: 0;
-          padding: 0.5em;
+          padding: 1em 0 0;
           font-size: 1.2em;
           font-weight: 600;
           color: $primary-inverse;
