@@ -1,12 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `EVO`,
-    short: `evo`,
-    description: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.`,
+    title: `parfum`,
+    short: `parfum`,
+    description: `IGNIS_DZ est une agence de services degital travaillant depuis 10 ans  avec des clients locaux et internationaux ,.nous fournissons différents services dans le domain marketing ou solution software personnalisées pour chaque problème, faciles à utiliser et à gérer, nous accompagnons les clients dans  leurs demarche,mission et leur activité avec la technologie la plus moderne  .en conclusion  nous visons à améliorer votre entreprise, car nous savons que votre succès est notre succès`,
     author: `@vhamed`,
-    siteUrl: `https://vhamed.github.io/evo`
+    siteUrl: `http://parfum.ignis-dz.com`
   },
-  pathPrefix: "/evo",
   plugins: [
     `gatsby-plugin-react-helmet`,
     {

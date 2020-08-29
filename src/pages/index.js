@@ -143,11 +143,13 @@ const IndexPage = () => (
           </div>
           <div className="card-content">
             <ul>
-              <li>option </li>
-              <li>option </li>
-              <li>option </li>
-              <li>option </li>
-              <li>option </li>
+              <li>Prise en main rapide</li>
+              <li>intégration facile</li>
+              <li>Un système de fidélité simple</li>
+              <li>Gestion de code a barre</li>
+              <li>Support disponible 24h/24h</li>
+              <li>Mise a jour carotidienne</li>
+              <li>Sauvegarde des donner disponible</li>
             </ul>
             <div className="button">
               <a href="#">Contactez Commercial</a>
@@ -161,11 +163,13 @@ const IndexPage = () => (
           </div>
           <div className="card-content">
             <ul>
-              <li>option </li>
-              <li>option </li>
-              <li>option </li>
-              <li>option </li>
-              <li>option </li>
+              <li>Prise en main rapide</li>
+              <li>intégration facile</li>
+              <li>Un système de fidélité simple</li>
+              <li>Gestion de code a barre</li>
+              <li>Support disponible 24h/24h</li>
+              <li>Mise a jour carotidienne</li>
+              <li>Sauvegarde des donner disponible</li>
             </ul>
             <div className="button">
               <a
