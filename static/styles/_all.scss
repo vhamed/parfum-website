@@ -10,12 +10,7 @@ $primary: #1755e2;
 $primary-inverse: #ffffff;
 $primary-light: #1781e2;
 
-$bg-default: #ffffff;
-$bg-paper: #f1f1f1;
 $font-name: Helvetica;
-
-$card-bg: #ffffff;
-$card-fg: #1781e2;
 
 body {
   font-family: $font-name;
@@ -130,8 +125,6 @@ body {
 
   .page-header {
     text-align: center;
-    background-color: $bg-default;
-    border-radius: 0px 0px 40px 40px;
 
     .wrapper {
       display: flex;
@@ -147,10 +140,10 @@ body {
     h1 {
       font-style: normal;
       font-weight: bold;
-      font-size: 48px;
-      line-height: 48px;
+      font-size: 2.5em;
       margin: 0 auto;
       color: $text-primary;
+      text-transform: capitalize;
     }
 
     h2 {
@@ -179,7 +172,6 @@ body {
       font-style: normal;
       font-weight: normal;
       font-size: 20px;
-      line-height: 34px;
     }
     .buttons {
       display: flex;
@@ -192,9 +184,9 @@ body {
         margin: 0 0.5rem;
 
         @media screen and (max-width: $break-small) {
-          margin: 0.25rem 0;
-          width: 80%;
-          max-width: 400px;
+          margin: 0.25rem;
+          // width: 80%;
+          // max-width: 400px;
         }
       }
 
@@ -229,16 +221,11 @@ body {
     }
 
     @media screen and (max-width: $break-small) {
-      padding-top: 1px;
-      padding-bottom: 50px;
-
-      h1,
-      h2 {
-        padding-top: 0;
+      h1 {
+        font-size: 25px;
       }
-
       img {
-        max-width: 80%;
+        max-width: 90%;
       }
     }
   }
@@ -404,7 +391,7 @@ body {
           }
 
           &:hover {
-            background-color: $card-fg;
+            background-color: $primary-light;
             color: $primary-inverse;
           }
         }
@@ -521,11 +508,11 @@ body {
 
       .about {
         margin-top: 26px;
-      }
-
-      .about {
         font-size: 14px;
         line-height: 23px;
+        p {
+          line-height: 1em;
+        }
       }
 
       .links {
