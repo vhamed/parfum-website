@@ -160,13 +160,15 @@ const IndexPage = () => (
           </div>
           <div className="card-content">
             <ul>
-              <li>Prise en main rapide</li>
-              <li>intégration facile</li>
-              <li>Un système de fidélité simple</li>
-              <li>Gestion de code a barre</li>
-              <li>Support disponible 24h/24h</li>
-              <li>Mise a jour carotidienne</li>
-              <li>Sauvegarde des donner disponible</li>
+              <li>Integration facile</li>
+              <li>Optimiser la gestion de stock</li>
+              <li>Aide dans la gestion des commende</li>
+              <li>Anticipe le surstockage et la permemption de vous produit</li>
+              <li>Statistique des produit</li>
+              <li>Gestion des prix de gros et detail</li>
+              <li>System de fidelite include</li>
+              <li>Facturation tous genrs</li>
+              <li>Support et mise à jour disponible</li>
             </ul>
             <div className="button">
               <a
