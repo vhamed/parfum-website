@@ -26,71 +26,24 @@ const socialLinks = [
 ];
 
 const Footer = ({ siteTitle, siteDescription }) => (
-  <footer id="footer">
-    <div className={"container"}>
-      <div className={"row"}>
-        <div className={"col-6"}>
-          <div className={"widget__item"}>
-            <div className="footer_logo">
-              <Link to="/" title={siteTitle}>
-                <img alt={"Logo"} src={logo} />
-              </Link>
-            </div>
-
-            <div className={"about"}>
-              <p>{siteDescription}</p>
-            </div>
-          </div>
-        </div>
-
-        <div className={"col-3"}>
-          <div className={"widget__item"}>
-            <ul className={"links"}>
-              <h4>Evo</h4>
-              <ul>
-                <li>
-                  <Link to="/contact" title="Contactez Nous">
-                    Contact
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/about" title="A Propos">
-                    A Propos
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/docs"
-                    title="Documentation"
-                    className={"links__special"}
-                  >
-                    Documentation
-                  </Link>
-                </li>
-              </ul>
-            </ul>
-          </div>
-        </div>
-
-        <div className={"col-3"}>
-          <div className={"widget__item"}>
-            <div className={"social"}>
-              {socialLinks.map(({ url, title, icon }, index) => (
-                <a href={url} title={title} key={index}>
-                  <img alt={title} src={icon} />
-                </a>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className={"copyright"}>
-        <p>
-          Copyright {new Date().getFullYear()}, {siteTitle}. All rights
-          reserved.
-        </p>
-      </div>
+  <footer className="container" id="footer">
+    <div className="footer_logo">
+      <Link to="/" title={siteTitle}>
+        <img alt={"Logo"} src={logo} />
+      </Link>
+    </div>
+    <div className={"row"}>
+      <p>{siteDescription}</p>
+    </div>
+    <div className={`row social`}>
+      {socialLinks.map(({ url, title, icon }, index) => (
+        <a href={url} title={title} key={index}>
+          <img alt={title} src={icon} />
+        </a>
+      ))}
+    </div>
+    <div className={"copyright"}>
+      <p>&#169; {new Date().getFullYear()} IGNIS_DZ</p>
     </div>
   </footer>
 );
