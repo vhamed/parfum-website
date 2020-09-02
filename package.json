@@ -1,7 +1,7 @@
 {
-  "name": "evo",
+  "name": "ignis-parfum",
   "private": true,
-  "description": "evo",
+  "description": "parfum",
   "version": "0.1.0",
   "author": "Hamed Bensaad <hamed.abdesselam7@yahoo.com>",
   "dependencies": {
