@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `parfum`,
-    short: `parfum`,
+    title: `Parfum`,
+    short: `Parfum`,
     description: `IGNIS_DZ est une agence de services degital travaillant depuis 10 ans  avec des clients locaux et internationaux ,.nous fournissons différents services dans le domain marketing ou solution software personnalisées pour chaque problème, faciles à utiliser et à gérer, nous accompagnons les clients dans  leurs demarche,mission et leur activité avec la technologie la plus moderne  .en conclusion  nous visons à améliorer votre entreprise, car nous savons que votre succès est notre succès`,
     author: `@vhamed`,
     siteUrl: `http://parfum.ignis-dz.com`
@@ -20,9 +20,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `evo`,
-        short_name: `evo`,
-        start_url: `/evo`,
+        name: `parfum`,
+        short_name: `parfum`,
+        start_url: `/`,
         background_color: `#663399`,
         theme_color: `#FF54AC`,
         display: `minimal-ui`,

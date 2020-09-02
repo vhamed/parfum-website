@@ -19,7 +19,7 @@ const Header = ({ siteTitle }) => {
               Fonctionalités
             </Link>
             <Link to="#price" href="#">
-              Prix
+              Tarifs
             </Link>
             <Link to="#footer" href="#">
               Contact
