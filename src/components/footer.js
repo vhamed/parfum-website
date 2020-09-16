@@ -2,7 +2,7 @@ import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
 import "../../static/styles/main.scss";
-import logo from "../../static/images/logo.svg";
+import logo from "../../static/images/ignis2.jpg";
 import facebookIcon from "../../static/images/fb-icon.svg";
 import beIcon from "../../static/images/be-icon.svg";
 import instagramIcon from "../../static/images/instagram-icon.svg";
@@ -33,7 +33,8 @@ const Footer = ({ siteTitle, siteDescription }) => (
       </Link>
     </div>
     <div className={"row"}>
-      <p>{siteDescription}</p>
+      <h3>0541-37-48-04 / 0541-37-48-04</h3>
+      <h3>ignis-msz@gmail.com</h3>
     </div>
     <div className={`row social`}>
       {socialLinks.map(({ url, title, icon }, index) => (
@@ -43,7 +44,7 @@ const Footer = ({ siteTitle, siteDescription }) => (
       ))}
     </div>
     <div className={"copyright"}>
-      <p>&#169; {new Date().getFullYear()} IGNIS_DZ</p>
+      <p>&#169; {new Date().getFullYear()} IGNIS</p>
     </div>
   </footer>
 );

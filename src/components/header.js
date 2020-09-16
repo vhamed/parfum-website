@@ -24,6 +24,9 @@ const Header = ({ siteTitle }) => {
             <Link to="#footer" href="#">
               Contact
             </Link>
+            <Link to="#footer" href="#">
+              A Propos
+            </Link>
           </div>
           <a className="icon" onClick={() => setResponsive(!responsive)}>
             <img alt="Toggle" src={menu} width="40px" />

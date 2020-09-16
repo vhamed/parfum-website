@@ -39,6 +39,7 @@ body {
     background-color: $primary;
     display: block;
     padding: 0.5rem 0;
+    position: relative;
 
     .topnav {
       overflow: hidden;
@@ -125,16 +126,10 @@ body {
 
   .page-header {
     text-align: center;
-
-    .wrapper {
-      display: flex;
-      justify-content: space-around;
-      flex-direction: column;
-      height: 50vh;
-    }
+    padding: 150px 0 0;
 
     @media screen and (max-width: $break-small) {
-      margin: 3em auto 0;
+      padding: 45px 0 0;
     }
 
     h1 {
@@ -147,20 +142,11 @@ body {
     }
 
     h2 {
-      font-size: 36px;
-      font-style: normal;
-      font-weight: bold;
-      line-height: 36px;
-      margin: 0 auto;
-      color: $text-primary;
-    }
-
-    .subheader {
-      margin: 0 auto;
+      margin: 15px auto 20px;
+      font-size: 16px;
       color: $text-secondary;
-      font-size: 22px;
-      line-height: 22px;
-
+      line-height: 24px;
+      font-weight: normal;
       span {
         color: $text-primary;
         font-weight: bold;
@@ -168,11 +154,6 @@ body {
       }
     }
 
-    p {
-      font-style: normal;
-      font-weight: normal;
-      font-size: 20px;
-    }
     .buttons {
       display: flex;
       flex-wrap: wrap;
@@ -473,17 +454,19 @@ body {
   }
 
   footer {
-    background-color: $footer-bg;
+    // background-color: $footer-bg;
     color: $footer-fg;
-    padding: 5em 0 2.5em;
-    margin: 5rem auto;
+    padding: 0;
+    margin: 3rem auto 0;
     border-radius: 15px;
 
-    @media screen and (max-width: $break-small) {
-    }
     .footer_logo {
       width: 200px;
       margin: 0 auto;
+    }
+
+    img {
+      width: 100%;
     }
 
     p {
@@ -497,9 +480,16 @@ body {
       }
     }
 
+    h3 {
+      // color: $primary-inverse;
+      color: $text-primary;
+      text-align: center;
+      margin: 0 auto;
+    }
+
     .social {
       width: 200px;
-      margin: 0 auto;
+      margin: 1em auto;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -525,6 +515,12 @@ body {
 
       @media screen and (max-width: $break-small) {
         margin-top: 31px;
+      }
+
+      p {
+        font-size: 12px;
+        // color: $primary-inverse;
+        color: $text-primary;
       }
     }
 

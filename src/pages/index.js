@@ -5,7 +5,6 @@ import SEO from "../components/seo";
 import featureImage from "../../static/images/header.png";
 import trustLogo1 from "../../static/images/zara.svg";
 import trustLogo2 from "../../static/images/zaki.svg";
-import trustLogo3 from "../../static/images/expert.svg";
 import trustLogo4 from "../../static/images/attia.svg";
 import trustLogo5 from "../../static/images/sook.svg";
 import trustLogo6 from "../../static/images/infopharm.svg";
@@ -20,41 +19,33 @@ const IndexPage = () => (
     <SEO title="Home" />
 
     <div className="page-header">
-      <div className="wrapper">
-        <h1>Gérez votre Parfumerie facilement</h1>
-        <div className="subheader">
-          N'attendez pas pour test notre application <span>gratuitement</span>{" "}
-          online
+      <h1>Gérez votre Parfumerie facilement</h1>
+      <h2>
+        N'attendez pas pour tester notre application <span>gratuitement</span>{" "}
+        online
+      </h2>
+      <span className="buttons">
+        <div className="button">
+          <a
+            href="https://agitated-almeida-3c7a92.netlify.app/#/"
+            target="_blank"
+          >
+            Essayez Online
+          </a>
         </div>
-        <span className="buttons">
-          <div className="button">
-            <a
-              href="https://agitated-almeida-3c7a92.netlify.app/#/"
-              target="__blank"
-              className="secondary"
-            >
-              Essayez en Ligne
-            </a>
-          </div>
-          <div className="button">
-            <a href="#">Télécharger</a>
-          </div>
-        </span>
-      </div>
+      </span>
       <img alt={"Dashboard"} src={featureImage} />
     </div>
 
     <div className={`container-fluid trust`}>
       <h3>Nos Clients</h3>
       <div className={"row"}>
+        <div className={"col-1"}></div>
         <div className={"col-2"}>
           <img src={trustLogo1} />
         </div>
         <div className={"col-2"}>
           <img src={trustLogo2} />
-        </div>
-        <div className={"col-2"}>
-          <img src={trustLogo3} />
         </div>
         <div className={"col-2"}>
           <img src={trustLogo4} />
@@ -65,6 +56,7 @@ const IndexPage = () => (
         <div className={"col-2"}>
           <img src={trustLogo6} />
         </div>
+        <div className={"col-1"}></div>
       </div>
     </div>
 
