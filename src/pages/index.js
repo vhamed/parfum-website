@@ -148,9 +148,6 @@ const IndexPage = () => (
               <li>Mise a jour carotidienne</li>
               <li>Sauvegarde des donner disponible</li>
             </ul>
-            <div className="button">
-              <a href="#">Contactez Commercial</a>
-            </div>
           </div>
         </div>
         <div className={`card disabled`}>
@@ -170,17 +167,6 @@ const IndexPage = () => (
               <li>Facturation tous genrs</li>
               <li>Support et mise à jour disponible</li>
             </ul>
-            <div className="button">
-              <a
-                href="#"
-                style={{
-                  backgroundColor: "gray",
-                  pointerEvents: "none"
-                }}
-              >
-                Contactez Commercial
-              </a>
-            </div>
           </div>
         </div>
       </div>

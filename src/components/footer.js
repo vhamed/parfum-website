@@ -33,7 +33,7 @@ const Footer = ({ siteTitle, siteDescription }) => (
       </Link>
     </div>
     <div className={"row"}>
-      <h3>0541-37-48-04 / 0541-37-48-04</h3>
+      <h3>0541-37-48-04 / 033-24-96-98</h3>
       <h3>ignis-msz@gmail.com</h3>
     </div>
     <div className={`row social`}>
