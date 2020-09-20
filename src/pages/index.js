@@ -30,7 +30,15 @@ const IndexPage = () => (
             href="https://agitated-almeida-3c7a92.netlify.app/#/"
             target="_blank"
           >
-            Essayez Online
+            Test Online
+          </a>
+        </div>
+        <div className="button">
+          <a
+            href="#footer"
+            className="secondary"
+          >
+            Contacter
           </a>
         </div>
       </span>

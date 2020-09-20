@@ -166,8 +166,6 @@ body {
 
         @media screen and (max-width: $break-small) {
           margin: 0.25rem;
-          // width: 80%;
-          // max-width: 400px;
         }
       }
 
@@ -184,6 +182,12 @@ body {
         font-weight: bold;
         flex-direction: column;
 
+        @media screen and (max-width: $break-small) {
+          height: 45px;
+          width: 90%;
+          margin: 0 auto;
+        }
+
         &:hover {
           background-color: $primary-light;
         }
@@ -193,6 +197,7 @@ body {
         background-color: $primary-inverse;
         color: $primary;
         border: 1px solid $primary;
+        width: 100%;
       }
     }
 
@@ -213,14 +218,14 @@ body {
 
   .trust {
     text-align: center;
-    margin: 10em auto;
+    margin: 0 auto 10em;
     padding: 0;
     background-color: $primary;
 
     h3 {
       font-size: 29px;
       color: $primary-inverse;
-      margin: 0 auto 1em;
+      margin: -3px auto 1em;
     }
 
     img {
